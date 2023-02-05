@@ -3,7 +3,7 @@ from flask import Blueprint, jsonify  # jsonify creates an endpoint response obj
 from flask_restful import Api, Resource # used for REST API building
 import requests  # used for testing 
 import time
-
+#NEW EDIT
 # Blueprints enable python code to be organized in multiple files and directories https://flask.palletsprojects.com/en/2.2.x/blueprints/
 covid_api = Blueprint('covid_api', __name__,
                    url_prefix='/api/covid')
