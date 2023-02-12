@@ -1,12 +1,7 @@
-import requests
-
-url = "https://viperscore.p.rapidapi.com/sports"
-
-headers = {
-	"X-RapidAPI-Key": "71d411b83cmshb7b1cee17c5afa3p1c914ejsnde8d0527c7ad",
-	"X-RapidAPI-Host": "viperscore.p.rapidapi.com"
-}
-
-response = requests.request("GET", url, headers=headers)
-
-print(response.text)
+from flask import request
+from __main__ import app
+@app.route('/api/jeopardy')
+def data():
+    category = request.args.get('category')
+    points = request.args.get('points')
+    print(category,points)

@@ -1,7 +1,7 @@
 
 from flask import Flask,jsonify,request
+from __main__ import app
 
-app = Flask(_name_)
 questions = [
     {
         'category': 'UFC',
@@ -110,5 +110,5 @@ def check_answer():
             return jsonify({"result": "Correct"})
     return jsonify({"result": "Incorrect"})
 
-if name == 'main':
+if __name__ == '__main__':
     app.run()

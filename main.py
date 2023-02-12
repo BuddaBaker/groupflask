@@ -34,6 +34,8 @@ def index():
 @app.route('/stub/')  # connects /stub/ URL to stub() function
 def stub():
     return render_template("stub.html")
+import model.api
+import model.jeopardy
 
 @app.before_first_request
 def activate_job():
