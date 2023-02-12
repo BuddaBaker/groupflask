@@ -1,6 +1,7 @@
 
 from flask import Flask,jsonify,request
 from __main__ import app
+from flask import request
 
 questions = [
     {
@@ -109,6 +110,17 @@ def check_answer():
         if answer == question["answer"]:
             return jsonify({"result": "Correct"})
     return jsonify({"result": "Incorrect"})
+
+@app.route('/api/jeopardy')
+def data():
+    category = request.args.get('category')
+    points = request.args.get('points')
+    print(category,points)
+    for question in questions:
+        if category == question["category"] and points == question["points"]:
+            return question["question"]
+    return 'Not Found'
+
 
 if __name__ == '__main__':
     app.run()
