@@ -1,7 +1,10 @@
 import threading
 
 # import "packages" from flask
-from flask import render_template  # import render_template from "public" flask libraries
+from flask import render_template
+
+
+# import render_template from "public" flask libraries
 
 # import "packages" from "this" project
 from __init__ import app  # Definitions initialization
@@ -34,6 +37,7 @@ def index():
 @app.route('/stub/')  # connects /stub/ URL to stub() function
 def stub():
     return render_template("stub.html")
+import model.jeopardy
 
 @app.before_first_request
 def activate_job():
