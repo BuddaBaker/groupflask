@@ -1,10 +1,9 @@
 import threading
+import model.jeopardy
+
 
 # import "packages" from flask
-from flask import render_template
-
-
-# import render_template from "public" flask libraries
+from flask import render_template  # import render_template from "public" flask libraries
 
 # import "packages" from "this" project
 from __init__ import app  # Definitions initialization
@@ -37,7 +36,6 @@ def index():
 @app.route('/stub/')  # connects /stub/ URL to stub() function
 def stub():
     return render_template("stub.html")
-import model.jeopardy
 
 @app.before_first_request
 def activate_job():
@@ -46,7 +44,6 @@ def activate_job():
 
 # this runs the application on the development server
 if __name__ == "__main__":
-    # change name for testing
     # change name for testing
     from flask_cors import CORS
     cors = CORS(app)
