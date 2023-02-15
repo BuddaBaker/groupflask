@@ -96,7 +96,69 @@ questions = [
         'question': 'How many career 3pts has Steph Curry made',
         'answer': '3302',
         'points' : '500'
-    }
+    },
+    {
+        'category': 'MLB',
+        'question': 'Who has the most home runs in MLB history',
+        'answer': 'Barry Bonds',
+        'points' : '100'
+    },
+    {
+        'category': 'MLB',
+        'question': 'Who has the most strikeouts in MLB history',
+        'answer': 'Nolan Ryan',
+        'points' : '200'
+    },
+    {    
+        'category': 'MLB',
+        'question': 'Who is the oldest Major Leaguer ever to hit a home run?',
+        'answer': 'Julio Franco',
+        'points' : '300'
+    },
+    {
+        'category': 'MLB',
+        'question': 'How many home runs did Aaron Judge have when he broke the record',
+        'answer': '22',
+        'points' : '400'
+    },
+    
+    {
+        'category': 'MLB',
+        'question': 'How many intentional walks did Roger Maris get in his 61 home run season?',
+        'answer': '0',
+        'points' : '500'
+    },
+    {
+        'category': 'Soccer',
+        'question': 'Which team has the most LaLiga titles?',
+        'answer': 'Real Madrid',
+        'points' : '100'
+    },
+    {
+        'category': 'Soccer',
+        'question': 'How many world cups has Ronaldo Won',
+        'answer': '0',
+        'points' : '200'
+    },
+    {    
+        'category': 'Soccer',
+        'question': 'What year did Vinicius Jr. Transfer to Real Madrid',
+        'answer': '2017',
+        'points' : '300'
+    },
+    {
+        'category': 'Soccer',
+        'question': 'Which club is known as the "Red Devils" ?',
+        'answer': 'Machester United',
+        'points' : '400'
+    },
+    
+    {
+        'category': 'Soccer',
+        'question': 'Who won the first Ballon dOR?',
+        'answer': 'Stanley Matthews',
+        'points' : '500'
+    },
 ]
 
 @app.route("/questions", methods=["GET"])
